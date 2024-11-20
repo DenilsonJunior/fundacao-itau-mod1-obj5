@@ -102,6 +102,8 @@ header {
             border-radius: .7rem 0 .7rem .7rem;
             .ico {
                 width: 70%;
+                height: 70%;
+                object-fit: contain;
             }
         }
         .button {
@@ -113,10 +115,16 @@ header {
             align-items: center;
             justify-content: center;
             gap: 1rem;
+            transition-duration: .3s;
             p {
                 font-size: 1.2rem;
                 color: #ffffff;
                 font-weight: 500;
+            }
+        }
+        &:hover {
+            .button {
+                transform: scale(1.04);
             }
         }
     }
